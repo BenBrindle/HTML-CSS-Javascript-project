@@ -117,6 +117,7 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: var(--clr-dark);
 }
 
 /* header */
@@ -176,6 +177,26 @@ header {
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open .nav{
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 .hamburger {
@@ -248,7 +269,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../Img/toan-phan-asr62h5w66w-unsplash.jpg);
+    background-image: url(../main_images/toan-phan-asr62h5w66w-unsplash.jpg);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
